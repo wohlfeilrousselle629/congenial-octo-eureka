@@ -1,0 +1,13 @@
+# 数据转换和重塑示例
+data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+reshaped_data = []
+
+for j in range(len(data[0])):
+    column = []
+    for i in range(len(data)):
+        column.append(data[i][j])
+    reshaped_data.append(column)
+
+# 打印重塑后的数据
+for row in reshaped_data:
+    print(row)
